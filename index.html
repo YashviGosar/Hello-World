@@ -1,1 +1,22 @@
-<h1>Hello, I am Yashvi..!!</h1>
+<!DOCTYPE html>
+<html ng-app="">
+	<head>
+		<title> AngularJS </title>
+		<script src="lib/angular.min.js"></script>
+		<style type="text/css">
+		body{
+			background-color: {{color}}
+		}
+		</style>
+
+	</head>
+	<body>
+		<h1>{{"Hello, I am Yashvi."}}</h1>
+		<input type="text" ng-model="number"> <br/>
+		This is your choice of number : <span ng-bind="number"></span> <br/>
+		<input type="text" ng-model="color"> <br/>
+		{{ "This is your choice of color : " + color }} <br/> 
+		
+
+	</body>
+</html>
